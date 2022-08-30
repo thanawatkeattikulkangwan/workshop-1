@@ -36,14 +36,20 @@ body button {
 }
 .nav-bar .menu-main {
   width: 975px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
-.nav-bar .menu-main img {
-  width: 35%;
+.nav-bar .menu-main .logo {
+  display: flex;
+  max-width: 20%;
+  flex-grow: 1;
+  flex-shrink: 0;
 }
-.nav-bar .menu-main .seach-input {
+.nav-bar .menu-main .logo img {
+  width: 60%;
+}
+.nav-bar .menu-main .search-box .seach-input {
   max-width: 268px;
   width: 100%;
   height: 36px;
@@ -99,7 +105,7 @@ body button {
   -moz-column-gap: 10px;
        column-gap: 10px;
   padding: 5px 8px;
-  overflow: scroll;
+  overflow-x: scroll;
 }
 .container .content .story__item {
   display: flex;

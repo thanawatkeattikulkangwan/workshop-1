@@ -35,22 +35,29 @@ body {
   background-color: #ffffff;
   .menu-main {
     width: 975px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    img {
-      width: 35%;
+    .logo {
+      display: flex;
+      max-width: 20%;
+      flex-grow: 1;
+      flex-shrink: 0;
+      img {
+        width: 60%;
+      }
     }
-
-    .seach-input {
-      max-width: 268px;
-      width: 100%;
-      height: 36px;
-      padding: 2px 10px;
-      background-color: #efefef;
-      border: none;
-      border-radius: 6px;
-      outline: none;
+    .search-box {
+      .seach-input {
+        max-width: 268px;
+        width: 100%;
+        height: 36px;
+        padding: 2px 10px;
+        background-color: #efefef;
+        border: none;
+        border-radius: 6px;
+        outline: none;
+      }
     }
 
     .menu {
@@ -98,7 +105,7 @@ body {
       align-items: center;
       column-gap: 10px;
       padding: 5px 8px;
-      overflow: scroll;
+      overflow-x: scroll;
       &__item {
         display: flex;
         flex-direction: column;
