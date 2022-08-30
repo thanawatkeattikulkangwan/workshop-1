@@ -36,18 +36,20 @@ body {
   .menu-main {
     width: 975px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
     .logo {
+      flex: 1 0 127px;
       display: flex;
-      max-width: 20%;
-      flex-grow: 1;
-      flex-shrink: 0;
+      align-items: center;
       img {
-        width: 60%;
+        width: 120px;
       }
     }
     .search-box {
+      flex: 0 1 auto;
+      min-width: 268px;
       .seach-input {
         max-width: 268px;
         width: 100%;
@@ -61,6 +63,7 @@ body {
     }
 
     .menu {
+      flex: 1 0 127px;
       display: flex;
       flex-direction: row;
       justify-content: flex-end;

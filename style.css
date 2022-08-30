@@ -37,17 +37,21 @@ body button {
 .nav-bar .menu-main {
   width: 975px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-}
-.nav-bar .menu-main .logo {
-  display: flex;
-  max-width: 20%;
-  flex-grow: 1;
+  justify-content: center;
   flex-shrink: 0;
 }
+.nav-bar .menu-main .logo {
+  flex: 1 0 127px;
+  display: flex;
+  align-items: center;
+}
 .nav-bar .menu-main .logo img {
-  width: 60%;
+  width: 120px;
+}
+.nav-bar .menu-main .search-box {
+  flex: 0 1 auto;
+  min-width: 268px;
 }
 .nav-bar .menu-main .search-box .seach-input {
   max-width: 268px;
@@ -60,6 +64,7 @@ body button {
   outline: none;
 }
 .nav-bar .menu-main .menu {
+  flex: 1 0 127px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
