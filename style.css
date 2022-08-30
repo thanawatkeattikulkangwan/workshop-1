@@ -113,6 +113,7 @@ body button {
   overflow-x: scroll;
 }
 .container .content .story__item {
+  min-width: 77px;
   display: flex;
   flex-direction: column;
   justify-content: center;

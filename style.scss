@@ -110,6 +110,7 @@ body {
       padding: 5px 8px;
       overflow-x: scroll;
       &__item {
+        min-width: 77px;
         display: flex;
         flex-direction: column;
         justify-content: center;
